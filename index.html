@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curseur</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        user-select: none;
+        font-family: 'Nunito', sans-serif;
+        font-size: 21px;
+    }
+    
+    body h1:nth-child(1) {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .curseur {
+        background-color: #ccc;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .curseur .valeur {
+        background-color: aliceblue;
+        padding: 5px;
+        min-width: 40px;
+        display: inline-block;
+    }
+    
+    .curseur .valeur:hover {
+        cursor: ew-resize;
+    }
+    
+    .lesCurseurs>div {
+        display: inline-block;
+    }
+    
+    #demo {
+        position: absolute;
+        background-color: rgb(137, 43, 226);
+        top: 250px;
+        left: 200px;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <h1>Changement d'un curseur</h1>
+    <div class='curseur'>
+        <label>Opacité : </label>
+        <span class='valeur'>30</span>
+    </div>
+
+
+
+    <div class='lesCurseurs'>
+        <div class='box1'></div>
+        <div class='box2'></div>
+        <div class='box3'></div>
+    </div>
+
+    <div id='demo'></div>
+
+
+    <script src="curseur.js" type="text/JavaScript"></script>
+    <script src="class.curseur.js" type="text/JavaScript"></script>
+</body>
+
+</html>
